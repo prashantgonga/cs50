@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
+//Calling the swap function at the top before executing any other block of code below
 void swap(int *a, int *b);
 
 int main(void)
@@ -13,6 +14,8 @@ int main(void)
     printf("x is %i\n", x);
     printf("y is %i\n", y);
     printf("swapping...\n");
+    //swap(&x,&y); fetches the address of both x and y, if we wanted to fetch the value we could have used swap (x,y);
+    
     swap(&x,&y);
     printf("swapped...\n");
     printf("x is %i\n", x);
