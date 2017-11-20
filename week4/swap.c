@@ -22,6 +22,7 @@ int main(void)
     printf("y is %i\n", y);
 }
 
+//*a and *b are pointers which means they are the address to the location in the memory where the value of a and b are stored
 void swap(int *a, int *b)
 {
     int tmp = *a;
